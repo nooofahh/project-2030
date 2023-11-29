@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" />
+   
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    
+    <script>
+        window.onload = function() {
+            shuffleList();
+        };
+
+        function shuffleList() {
+            var ol = document.getElementById('names');
+            for (var i = ol.children.length; i >= 0; i--) {
+                ol.appendChild(ol.children[Math.random() * i | 0]);
+            }
+        }
+    </script>
+    <style>
+        #names {
+            list-style: none;
+            text-align: center;
+            padding-top: 250px;
+            font-size: 40px;
+            font-style: italic;
+           display:flex;     
+          
+        }
+       
+
+
+            li:hover {
+                background-color: rgb(189, 150, 219);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+
+
+            #names {
+                list-style: none;
+                text-align: center;
+                padding-top: 250px;
+                font-size: 10px;
+                font-style: italic;
+                display: flex;
+                font-weight: bold;
+            }
+
+            body {
+                background-image: url(photo_٢٠٢٣-١١-٢٤_١٩-٥٣-٣٠.jpg);
+                background-attachment: fixed;
+            }
+        }
+
+
+
+
+
+
+
+
+        @media screen and (max-width: 1024px) {
+
+
+            #names {
+                list-style: none;
+                text-align: center;
+                padding-top: 350px;
+                font-size: 27px;
+                font-style: italic;
+                display: flex;
+                font-weight: bold;
+            }
+
+            body {
+                background-image: url(photo_٢٠٢٣-١١-٢٤_١٩-٥٣-٣٠.jpg);
+                background-attachment: fixed;
+            }
+        }
+
+
+
+
+
+
+        </style  >
+
+</head>
+<body style="background-image: url(photo_٢٠٢٣-١١-٢٤_١٩-٥٣-٣٠.jpg); background-position: center; background-size: cover; " >
+
+
+
+    <ul>
+        <li><a href="Home.html">معلومات الاعضاء</a></li>
+        <li><a href="contactt.html">للتواصل معنا</a></li>
+        <li><a href="trans.html">جهود المملكة</a></li>
+        <li><a href="health.html">الصحة</a></li>
+        <li><a href="tec.html">التكنولوجيا</a></li>
+        <li><a href="enter.html">ترفية</a></li>
+
+    </ul>
+   
+
+
+
+
+
+
+
+
+
+    <ol id="names">
+        <li>نوف سعد العنزي (431001744)</li>   
+        <br />
+        <li>امجاد بدر الفقير(431001976)</li>
+        <br />
+        <li>ديم الفريدي الحربي (431006970)</li>
+        <br />
+        <li>ريم عيد العطيات(431002722)</li>
+        <br />
+    </ol>
+
+
+
+
+
+
+
+  
+
+</body>
+</html>

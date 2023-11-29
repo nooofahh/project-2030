@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" />
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+       
+
+
+
+
+
+
+
+       form input,  form textarea {
+           display:block;
+           width:95%;
+           padding:10px;
+           border-radius:5px;
+           background-color:#f7f7f7;
+           color:#333;
+        }
+        form input :focus, form textarea:focus {
+            box-shadow:0 0 5px #333;
+
+
+
+
+        }
+            label {
+            padding: 12px 12px 12px 0;
+            display: block;
+        }
+
+       form button{
+            background-color: black;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            
+            display:block;
+                width:100%;
+                border-radius:5px;
+
+        }
+
+
+        .container {
+           width:80%;
+           max-width:600px;
+           margin:50px auto;
+           padding:20px;
+           background-color:#fff;
+           border-radius:10px;
+
+        }
+        body{
+
+
+            background-color:#f5f5f5;
+
+        }
+        .container  h2{
+            text-align:center;
+
+           
+        }
+
+     
+            
+        
+    </style>
+
+    
+
+
+
+        
+
+
+
+
+   
+
+</head>
+<body>
+    <ul>
+        <li><a href="Home.html">معلومات الاعضاء</a></li>
+        <li><a href="contactt.html">للتواصل معنا</a></li>
+        <li><a href="trans.html">جهود المملكة</a></li>
+        <li><a href="health.html">الصحة</a></li>
+        <li><a href="tec.html">التكنولوجيا</a></li>
+        <li><a href="enter.html">ترفية</a></li>
+
+    </ul>
+
+
+
+
+
+    <div class="container">
+        <h2>تواصل معنا</h2>
+        <form name="myForm" action="https://formspree.io/f/mknllnjq" method="post" >
+
+            <label for="fname">:الاسم الاول</label>
+
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required         >
+
+
+            <label for="lname">:الاسم الاخير</label>
+
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+
+            <label for="email">:الايميل</label>
+
+            <input type="email" id="email" name="email" placeholder="Your Email..">
+
+
+            <label for="subject">:الموضوع</label>
+
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required  pattern="[A-Za-z]{12}"  ></textarea>
+
+
+
+            <button type="submit" value="send">send</button>
+
+        </form>
+    </div>
+
+</body>
+
